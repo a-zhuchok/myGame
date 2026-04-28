@@ -1,0 +1,36 @@
+ <!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Arkanoid JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hud">
+      <div class="hud-item">Уровень: <span id="level">1</span></div>
+      <div class="hud-item">Очки: <span id="score">0</span></div>
+      <div class="hud-item">Жизни: <span id="lives">3</span></div>
+    </header>
+
+    <section class="game-wrap">
+      <canvas id="game" width="960" height="540" aria-label="Arkanoid поле"></canvas>
+
+      <div class="overlay" id="overlay">
+        <h1 id="overlay-title">Арканоид</h1>
+        <p id="overlay-text">Нажми пробел или кнопку "Старт"</p>
+        <button id="start-btn" type="button">Старт</button>
+      </div>
+    </section>
+
+    <section class="mobile-controls" aria-label="Сенсорное управление">
+      <button id="left-btn" type="button">◀</button>
+      <button id="launch-btn" type="button">Пуск</button>
+      <button id="right-btn" type="button">▶</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
